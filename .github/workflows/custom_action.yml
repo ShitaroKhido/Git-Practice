@@ -7,8 +7,8 @@ on:
     branches: [master]
 
 jobs:
-  print-something:
+  custom-message:
     runs-on: ubuntu-latest
     steps:
-      - name: Print a message
+      - name: Print message step
         run: echo "Hello, world!"
