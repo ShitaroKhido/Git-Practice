@@ -1,0 +1,14 @@
+name: Test Custom Action YML
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  print-something:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a message
+        run: echo "Hello, world!"
